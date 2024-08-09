@@ -30,4 +30,4 @@ def analyze_by_color(surface):
     low_height_proportion = low_height_area / sum_of_areas
     mid_height_proportion = mid_height_area / sum_of_areas
     high_height_proportion = high_height_area / sum_of_areas
-    return low_height_proportion, mid_height_proportion, high_height_proportion
+    return round(low_height_proportion, 3), round(mid_height_proportion, 3), round(high_height_proportion, 3)
