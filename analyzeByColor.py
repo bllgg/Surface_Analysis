@@ -1,12 +1,12 @@
 """
 Surface is a 2D array which contains surface height data
 [
-[h11, h12, h13, ... , h1m],
-[h21, h22, h23, ... , h2m],
+[[r11, g11, b11], [r12, g12, b12], [r11, g11, b13], ... , [r1m, g1m, b1m]],
+[[r21, g21, b21], [r22, g22, b22], [r23, g23, b23], ... , [r2m, g2m, b2m]],
 .
 .
 .
-[hn1, hn2, hn3, ... , hnm]
+[[rn1, gn1, bn1], [rn2, gn2, bn2], [rn3, gn3, bn3], ... , [rnm, gnm, bnm]]
 ]
 """
 
