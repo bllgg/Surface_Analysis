@@ -3,60 +3,40 @@ from analyzeByHeight import analyze_by_height
 from analyzeByColor import analyze_by_color
 from Height.heightData import generate_height_data
 
+import os
 import cv2
 
 
 def image_analyze(analyze_function, surface, lower_mid=0, upper_mid=0):
     if analyze_function == "color":
-        print(analyze_by_color(surface))
+        return analyze_by_color(surface)
     else:
-        print(analyze_by_height(surface, lower_mid, upper_mid))
+        return analyze_by_height(surface, lower_mid, upper_mid)
 
 
 if __name__ == '__main__':
     function_color = "color"  # "color" or "height"
     function_height = "height"
 
-    # COLOR DATA
-    # Test case 1
-    image_multicolor = cv2.imread('Images/sample2.jpg')
-    image_rgb = cv2.cvtColor(image_multicolor, cv2.COLOR_BGR2RGB)
-    python_2d_rgb_array = image_rgb.tolist()
-    print("Color image")
-    image_analyze(function_color, python_2d_rgb_array)
+    folder_path = 'Images/SurfaceData'
+    file_path = 'results.txt'
+    files = os.listdir(folder_path)
+    # Filter out non-image files (optional)
+    image_files = [file for file in files if file.endswith(('.PNG', 'png', '.jpg', '.jpeg', '.bmp', '.gif'))]
 
-    # Test case 2
-    image_red = cv2.imread('Images/red.jpg')
-    image_rgb = cv2.cvtColor(image_red, cv2.COLOR_BGR2RGB)
-    python_2d_rgb_array = image_rgb.tolist()
-    print("Red image")
-    image_analyze(function_color, python_2d_rgb_array)
+    results = []
+    for image_file in image_files:
+        image_path = os.path.join(folder_path, image_file)
+        img = cv2.imread(image_path)
+        image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        python_2d_rgb_array = image_rgb.tolist()
+        result = (image_analyze(function_color, python_2d_rgb_array))
+        results.append(result)
 
-    # Test case 3
-    image_green = cv2.imread('Images/green.jpg')
-    image_rgb = cv2.cvtColor(image_green, cv2.COLOR_BGR2RGB)
-    python_2d_rgb_array = image_rgb.tolist()
-    print("Green image")
-    image_analyze(function_color, python_2d_rgb_array)
+    # Open the file in append mode
+    with open(file_path, 'a') as file:
+        for result, file_name in zip(results, image_files):
+            res = ' '.join(str(num) for num in result)
+            file.write(file_name + ": " + res + '\n')  # Append each word to the file with a newline character
 
-    # Test case 4
-    image_blue = cv2.imread('Images/blue.jpg')
-    image_rgb = cv2.cvtColor(image_blue, cv2.COLOR_BGR2RGB)
-    python_2d_rgb_array = image_rgb.tolist()
-    print("Blue image")
-    image_analyze(function_color, python_2d_rgb_array)
-
-    # HEIGHT DATA
-    # Test case 5
-    surface_height_data = generate_height_data(100, 100, 0, 100)
-    print("Height image")
-    image_analyze(function_height, surface_height_data, 40, 60)
-
-    #actualImageEdited.png
-    # COLOR DATA
-    # Test case 1
-    image_multicolor = cv2.imread('Images/actualImageEdited.png')
-    image_rgb = cv2.cvtColor(image_multicolor, cv2.COLOR_BGR2RGB)
-    python_2d_rgb_array = image_rgb.tolist()
-    print("Actual image")
-    image_analyze(function_color, python_2d_rgb_array)
+    print(f"Words have been appended to {file_path}")

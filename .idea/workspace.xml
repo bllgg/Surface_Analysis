@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="Image files added" />
+    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="Round function added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Sample1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Sample2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/red.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzeByColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzeByColor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzeByHeight.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzeByHeight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Surface_Analysis" />
@@ -149,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723198462064</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Round function added">
+      <option name="closed" value="true" />
+      <created>1723201332448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723201332448</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +191,23 @@
     <MESSAGE value="Height data function refactor" />
     <MESSAGE value="Test file completed" />
     <MESSAGE value="Image files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image files added" />
+    <MESSAGE value="Round function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Round function added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

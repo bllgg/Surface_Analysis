@@ -12,6 +12,7 @@ Surface is a 2D array which contains surface height data
 
 
 def analyze_by_color(surface):
+    number_of_decimal_points = 2
     low_height_area = 0.0
     mid_height_area = 0.0
     high_height_area = 0.0
@@ -30,4 +31,4 @@ def analyze_by_color(surface):
     low_height_proportion = low_height_area / sum_of_areas
     mid_height_proportion = mid_height_area / sum_of_areas
     high_height_proportion = high_height_area / sum_of_areas
-    return round(low_height_proportion, 3), round(mid_height_proportion, 3), round(high_height_proportion, 3)
+    return round(low_height_proportion, number_of_decimal_points), round(mid_height_proportion, number_of_decimal_points), round(high_height_proportion, number_of_decimal_points)
