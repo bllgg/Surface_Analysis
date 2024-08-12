@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="Round function added">
+    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="removed images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Sample1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/Sample2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/blue.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/green.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzeByColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzeByColor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzeByHeight.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzeByHeight.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -167,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723201332448</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Automated results generation">
+      <option name="closed" value="true" />
+      <created>1723458927179</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723458927179</updated>
+    </task>
+    <task id="LOCAL-00012" summary="removed images">
+      <option name="closed" value="true" />
+      <created>1723458973407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723458973407</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,19 +201,21 @@
     <MESSAGE value="Test file completed" />
     <MESSAGE value="Image files added" />
     <MESSAGE value="Round function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Round function added" />
+    <MESSAGE value="Automated results generation" />
+    <MESSAGE value="removed images" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>64</line>
+          <line>20</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>73</line>
+          <line>35</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

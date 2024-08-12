@@ -18,8 +18,14 @@ if __name__ == '__main__':
     function_color = "color"  # "color" or "height"
     function_height = "height"
 
-    folder_path = 'Images/SurfaceData'
+    folder_path = 'Images/Surface_Data'
     file_path = 'results.txt'
+
+    # Check if the file exists and delete it if it does
+    if os.path.exists(file_path):
+        os.remove(file_path)
+        print(f"{file_path} has been deleted.")
+
     files = os.listdir(folder_path)
     # Filter out non-image files (optional)
     image_files = [file for file in files if file.endswith(('.PNG', 'png', '.jpg', '.jpeg', '.bmp', '.gif'))]
