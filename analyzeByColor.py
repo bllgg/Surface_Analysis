@@ -1,5 +1,5 @@
 """
-Surface is a 2D array which contains surface height data
+Surface is a 2D array which contains surface color data
 [
 [[r11, g11, b11], [r12, g12, b12], [r11, g11, b13], ... , [r1m, g1m, b1m]],
 [[r21, g21, b21], [r22, g22, b22], [r23, g23, b23], ... , [r2m, g2m, b2m]],
