@@ -12,7 +12,7 @@ Surface is a 2D array which contains surface color data
 
 
 def analyze_by_color(surface):
-    number_of_decimal_points = 2
+    number_of_decimal_points = 4
     low_height_area = 0.0
     mid_height_area = 0.0
     high_height_area = 0.0

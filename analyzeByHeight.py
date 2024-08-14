@@ -12,7 +12,7 @@ Surface is a 2D array which contains surface height data
 
 
 def analyze_by_height(surface, lower_mid_val, upper_mid_val):
-    number_of_decimal_points = 2
+    number_of_decimal_points = 4
     low_height_area = 0.0
     mid_height_area = 0.0
     high_height_area = 0.0
