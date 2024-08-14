@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="removed images">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="793196c5-f036-4b41-91d9-36812b74e813" name="Changes" comment="Updated for delete results" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723458973407</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated for delete results">
+      <option name="closed" value="true" />
+      <created>1723459824387</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723459824387</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +208,8 @@
     <MESSAGE value="Round function added" />
     <MESSAGE value="Automated results generation" />
     <MESSAGE value="removed images" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed images" />
+    <MESSAGE value="Updated for delete results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated for delete results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

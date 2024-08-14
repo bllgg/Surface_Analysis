@@ -25,7 +25,7 @@ def analyze_by_color(surface):
             elif surface[i][j][1] > surface[i][j][0] and surface[i][j][1] > surface[i][j][2]:
                 mid_height_area += 1.0
             # Calculate blue zones
-            else:
+            elif surface[i][j][2] > surface[i][j][0] and surface[i][j][2] > surface[i][j][1]:
                 low_height_area += 1.0
     sum_of_areas = low_height_area + mid_height_area + high_height_area
     low_height_proportion = low_height_area / sum_of_areas
