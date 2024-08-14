@@ -16,19 +16,36 @@ def analyze_by_color(surface):
     low_height_area = 0.0
     mid_height_area = 0.0
     high_height_area = 0.0
+
     for i in range(len(surface)):
         for j in range(len(surface[i])):
+            r, g, b = surface[i][j]
+
+            # Skip grey areas where RGB values are nearly equal
+            if abs(r - g) <= 15 and abs(r - b) <= 15 and abs(g - b) <= 15:
+                continue
+
+            # Skip white areas where RGB values are close to 255
+            if r > 235 and g > 235 and b > 235:
+                continue
+
             # Calculate red zones
-            if surface[i][j][0] > surface[i][j][1] and surface[i][j][0] > surface[i][j][2]:
+            if r > g and r > b:
                 high_height_area += 1.0
             # Calculate green zones
-            elif surface[i][j][1] > surface[i][j][0] and surface[i][j][1] > surface[i][j][2]:
+            elif g > r and g > b:
                 mid_height_area += 1.0
             # Calculate blue zones
-            elif surface[i][j][2] > surface[i][j][0] and surface[i][j][2] > surface[i][j][1]:
+            elif b > r and b > g:
                 low_height_area += 1.0
+
     sum_of_areas = low_height_area + mid_height_area + high_height_area
     low_height_proportion = low_height_area / sum_of_areas
     mid_height_proportion = mid_height_area / sum_of_areas
     high_height_proportion = high_height_area / sum_of_areas
-    return round(low_height_proportion, number_of_decimal_points), round(mid_height_proportion, number_of_decimal_points), round(high_height_proportion, number_of_decimal_points)
+
+    return (
+        round(low_height_proportion, number_of_decimal_points),
+        round(mid_height_proportion, number_of_decimal_points),
+        round(high_height_proportion, number_of_decimal_points)
+    )
